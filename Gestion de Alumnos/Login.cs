@@ -96,7 +96,7 @@ namespace Gestion_de_Alumnos
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            Form2 ventana = new Form2();
+            MenuPrincipal ventana = new MenuPrincipal();
             ventana.ShowDialog();
         }
     }
