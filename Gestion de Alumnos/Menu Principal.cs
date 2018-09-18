@@ -44,5 +44,11 @@ namespace Gestion_de_Alumnos
             ReleaseCapture();
             SendMessage(this.Handle, WM_SYSCOMMAND, MOUSE_MOVE, 0);
         }
+
+        private void btnAlumnos_Click(object sender, EventArgs e)
+        {
+            frmAlumnos alum = new frmAlumnos();
+            alum.ShowDialog();
+        }
     }
 }

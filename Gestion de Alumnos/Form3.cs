@@ -7,14 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
+using Negocio;
 
 namespace Gestion_de_Alumnos
 {
-    public partial class Form3 : Form
+    public partial class frmAlumnos : Form
     {
-        public Form3()
+        public frmAlumnos()
         {
             InitializeComponent();
+        }
+
+        private void frmAlumnos_Load(object sender, EventArgs e)
+        {
+             AlumnoNegocio alum = new AlumnoNegocio();
+
+            try
+            {
+                dgvAlumnos.DataSource = alum.listar();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }

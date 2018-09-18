@@ -1,6 +1,6 @@
 ﻿namespace Gestion_de_Alumnos
 {
-    partial class Form3
+    partial class frmAlumnos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvAlumnos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvAlumnos
+            // 
+            this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlumnos.Location = new System.Drawing.Point(67, 56);
+            this.dgvAlumnos.Name = "dgvAlumnos";
+            this.dgvAlumnos.Size = new System.Drawing.Size(1185, 676);
+            this.dgvAlumnos.TabIndex = 0;
+            // 
+            // frmAlumnos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form3";
+            this.ClientSize = new System.Drawing.Size(1424, 862);
+            this.Controls.Add(this.dgvAlumnos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmAlumnos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Alumnos";
+            this.Load += new System.EventHandler(this.frmAlumnos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvAlumnos;
     }
 }
