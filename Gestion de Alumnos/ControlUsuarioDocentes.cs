@@ -16,5 +16,11 @@ namespace Gestion_de_Alumnos
         {
             InitializeComponent();
         }
+
+        private void btnListadoDocentes_Click(object sender, EventArgs e)
+        {
+            frmListadoDocentes doc = new frmListadoDocentes();
+            doc.ShowDialog();
+        }
     }
 }

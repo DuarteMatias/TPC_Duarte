@@ -30,7 +30,7 @@
         {
             this.dgvAlumnos = new System.Windows.Forms.DataGridView();
             this.pnlAlumnos = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,14 +40,15 @@
             this.dgvAlumnos.AllowUserToDeleteRows = false;
             this.dgvAlumnos.AllowUserToResizeColumns = false;
             this.dgvAlumnos.AllowUserToResizeRows = false;
+            this.dgvAlumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlumnos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvAlumnos.GridColor = System.Drawing.Color.DodgerBlue;
-            this.dgvAlumnos.Location = new System.Drawing.Point(172, 142);
+            this.dgvAlumnos.Location = new System.Drawing.Point(130, 110);
             this.dgvAlumnos.MultiSelect = false;
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAlumnos.Size = new System.Drawing.Size(1185, 676);
+            this.dgvAlumnos.Size = new System.Drawing.Size(1200, 700);
             this.dgvAlumnos.TabIndex = 0;
             // 
             // pnlAlumnos
@@ -59,22 +60,22 @@
             this.pnlAlumnos.Size = new System.Drawing.Size(1440, 15);
             this.pnlAlumnos.TabIndex = 1;
             // 
-            // button1
+            // btnRegresar
             // 
-            this.button1.Location = new System.Drawing.Point(1309, 847);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegresar.Location = new System.Drawing.Point(1309, 847);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(119, 41);
+            this.btnRegresar.TabIndex = 2;
+            this.btnRegresar.Text = "Regresar al\r\nMenu Principal";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // frmListadoAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 900);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.pnlAlumnos);
             this.Controls.Add(this.dgvAlumnos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -91,6 +92,6 @@
 
         private System.Windows.Forms.DataGridView dgvAlumnos;
         private System.Windows.Forms.Panel pnlAlumnos;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

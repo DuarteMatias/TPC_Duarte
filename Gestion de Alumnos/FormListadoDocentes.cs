@@ -7,31 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Dominio;
 using Negocio;
 
 namespace Gestion_de_Alumnos
 {
-    public partial class frmListadoAlumnos : Form
+    public partial class frmListadoDocentes : Form
     {
-        public frmListadoAlumnos()
+        public frmListadoDocentes()
         {
             InitializeComponent();
         }
 
-        private void frmAlumnos_Load(object sender, EventArgs e)
+        private void frmListadoDocentes_Load(object sender, EventArgs e)
         {
-             AlumnoNegocio alum = new AlumnoNegocio();
+            DocenteNegocio doc = new DocenteNegocio();
 
             try
             {
-                dgvAlumnos.DataSource = alum.listar();
+                dgvDocentes.DataSource = doc.listar();
                 //código que reescala la columnas para que quepan con el contenido de la misma.
                 int i;
                 for (i = 0; i < 6; i++)
                 {
-                DataGridViewColumn column = dgvAlumnos.Columns[i];
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                    DataGridViewColumn column = dgvDocentes.Columns[i];
+                    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                 }
             }
             catch (Exception ex)
