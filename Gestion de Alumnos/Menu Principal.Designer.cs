@@ -78,6 +78,7 @@
             // 
             this.btnDocentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnDocentes.FlatAppearance.BorderSize = 0;
+            this.btnDocentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDocentes.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDocentes.ForeColor = System.Drawing.Color.White;

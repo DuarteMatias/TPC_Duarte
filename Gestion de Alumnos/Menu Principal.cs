@@ -50,8 +50,6 @@ namespace Gestion_de_Alumnos
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            //frmAlumnos alum = new frmAlumnos();
-            //alum.ShowDialog();
             SidePanel.Height = btnAlumnos.Height;
             SidePanel.Top = btnAlumnos.Top;
             controlUsuarioAlumnos1.BringToFront();
