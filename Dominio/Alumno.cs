@@ -15,6 +15,6 @@ namespace Dominio
         public string Email { set; get; }
         public Direccion Direccion { set; get; }
         public Telefono Telefono { set; get; }
-        public Identificacion Identificacion { set; get; }
+        public int Dni { set; get; }
     }
 }

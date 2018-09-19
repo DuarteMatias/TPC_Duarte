@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -40,6 +41,7 @@
             this.lblRecuperarContraseña = new System.Windows.Forms.LinkLabel();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 330);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 0;
             // 
             // shapeContainer1
             // 
@@ -124,7 +126,7 @@
             this.label1.Location = new System.Drawing.Point(472, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 33);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 0;
             this.label1.Text = "LOGIN";
             // 
             // btnIngresar
@@ -138,7 +140,8 @@
             this.btnIngresar.Location = new System.Drawing.Point(410, 254);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(207, 40);
-            this.btnIngresar.TabIndex = 3;
+            this.btnIngresar.TabIndex = 0;
+            this.btnIngresar.TabStop = false;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
@@ -152,7 +155,6 @@
             this.lblRecuperarContraseña.Name = "lblRecuperarContraseña";
             this.lblRecuperarContraseña.Size = new System.Drawing.Size(114, 13);
             this.lblRecuperarContraseña.TabIndex = 0;
-            this.lblRecuperarContraseña.TabStop = true;
             this.lblRecuperarContraseña.Text = "Recuperar Contraseña";
             // 
             // btnCerrar
@@ -176,6 +178,10 @@
             this.btnMinimizar.TabIndex = 6;
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Login
             // 
@@ -218,6 +224,7 @@
         private System.Windows.Forms.LinkLabel lblRecuperarContraseña;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

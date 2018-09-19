@@ -58,7 +58,7 @@ namespace Gestion_de_Alumnos
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            timer1.Start();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -98,6 +98,19 @@ namespace Gestion_de_Alumnos
         {
             MenuPrincipal ventana = new MenuPrincipal();
             ventana.ShowDialog();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) //va bajando la transparencia para crear efecto de face out
+        {
+            if(this.Opacity > 0.0)
+            {
+                this.Opacity -= 0.20;
+            }
+            else
+            {
+                timer1.Stop();
+                Application.Exit();
+            }
         }
     }
 }

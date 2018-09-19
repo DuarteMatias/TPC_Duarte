@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlUsuarioAlumnos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuarioAlumnos.Designer.cs">
+      <DependentUpon>ControlUsuarioAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuarioDocentes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuarioDocentes.Designer.cs">
+      <DependentUpon>ControlUsuarioDocentes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +73,11 @@
     <Compile Include="Menu Principal.Designer.cs">
       <DependentUpon>Menu Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="FormListadoAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="FormListadoAlumnos.Designer.cs">
+      <DependentUpon>FormListadoAlumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="Form4.cs">
       <SubType>Form</SubType>
@@ -75,8 +87,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="ControlUsuarioAlumnos.resx">
+      <DependentUpon>ControlUsuarioAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuarioDocentes.resx">
+      <DependentUpon>ControlUsuarioDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoAlumnos.resx">
+      <DependentUpon>FormListadoAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

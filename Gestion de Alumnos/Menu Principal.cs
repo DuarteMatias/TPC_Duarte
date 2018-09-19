@@ -15,6 +15,9 @@ namespace Gestion_de_Alumnos
         public MenuPrincipal()
         {
             InitializeComponent();
+            SidePanel.Height = btnAlumnos.Height;
+            SidePanel.Top = btnAlumnos.Top;
+            controlUsuarioAlumnos1.BringToFront();
         }
 
         private void MenuPrincipal_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
@@ -47,8 +50,18 @@ namespace Gestion_de_Alumnos
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
-            frmAlumnos alum = new frmAlumnos();
-            alum.ShowDialog();
+            //frmAlumnos alum = new frmAlumnos();
+            //alum.ShowDialog();
+            SidePanel.Height = btnAlumnos.Height;
+            SidePanel.Top = btnAlumnos.Top;
+            controlUsuarioAlumnos1.BringToFront();
+        }
+
+        private void btnDocentes_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnDocentes.Height;
+            SidePanel.Top = btnDocentes.Top;
+            controlUsuarioDocentes1.BringToFront();
         }
     }
 }

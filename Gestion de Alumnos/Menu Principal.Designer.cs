@@ -29,16 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SidePanel = new System.Windows.Forms.Panel();
             this.btnPadres = new System.Windows.Forms.Button();
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.controlUsuarioAlumnos1 = new Gestion_de_Alumnos.ControlUsuarioAlumnos();
+            this.controlUsuarioDocentes1 = new Gestion_de_Alumnos.ControlUsuarioDocentes();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.btnPadres);
             this.panel1.Controls.Add(this.btnDocentes);
             this.panel1.Controls.Add(this.btnAlumnos);
@@ -47,6 +51,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 900);
             this.panel1.TabIndex = 0;
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.SidePanel.Location = new System.Drawing.Point(0, 170);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(14, 59);
+            this.SidePanel.TabIndex = 1;
             // 
             // btnPadres
             // 
@@ -75,6 +87,7 @@
             this.btnDocentes.TabIndex = 0;
             this.btnDocentes.Text = "DOCENTES";
             this.btnDocentes.UseVisualStyleBackColor = false;
+            this.btnDocentes.Click += new System.EventHandler(this.btnDocentes_Click);
             // 
             // btnAlumnos
             // 
@@ -99,14 +112,30 @@
             this.pnlTop.Enabled = false;
             this.pnlTop.Location = new System.Drawing.Point(200, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(1240, 34);
+            this.pnlTop.Size = new System.Drawing.Size(1240, 25);
             this.pnlTop.TabIndex = 1;
+            // 
+            // controlUsuarioAlumnos1
+            // 
+            this.controlUsuarioAlumnos1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioAlumnos1.Name = "controlUsuarioAlumnos1";
+            this.controlUsuarioAlumnos1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioAlumnos1.TabIndex = 2;
+            // 
+            // controlUsuarioDocentes1
+            // 
+            this.controlUsuarioDocentes1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioDocentes1.Name = "controlUsuarioDocentes1";
+            this.controlUsuarioDocentes1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioDocentes1.TabIndex = 3;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.Controls.Add(this.controlUsuarioDocentes1);
+            this.Controls.Add(this.controlUsuarioAlumnos1);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -126,5 +155,8 @@
         private System.Windows.Forms.Button btnPadres;
         private System.Windows.Forms.Button btnDocentes;
         private System.Windows.Forms.Button btnAlumnos;
+        private System.Windows.Forms.Panel SidePanel;
+        private ControlUsuarioAlumnos controlUsuarioAlumnos1;
+        private ControlUsuarioDocentes controlUsuarioDocentes1;
     }
 }
