@@ -98,6 +98,7 @@ namespace Gestion_de_Alumnos
         {
             MenuPrincipal ventana = new MenuPrincipal();
             ventana.ShowDialog();
+            Application.OpenForms["Login"].Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e) //va bajando la transparencia para crear efecto de face out

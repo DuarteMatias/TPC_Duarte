@@ -155,6 +155,7 @@
             this.lblRecuperarContraseña.Name = "lblRecuperarContraseña";
             this.lblRecuperarContraseña.Size = new System.Drawing.Size(114, 13);
             this.lblRecuperarContraseña.TabIndex = 0;
+            this.lblRecuperarContraseña.TabStop = true;
             this.lblRecuperarContraseña.Text = "Recuperar Contraseña";
             // 
             // btnCerrar
@@ -202,7 +203,7 @@
             this.Name = "Login";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();

@@ -81,7 +81,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmListadoAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alumnos";
+            this.Text = "ListadoAlumnos";
             this.Load += new System.EventHandler(this.frmAlumnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
             this.ResumeLayout(false);

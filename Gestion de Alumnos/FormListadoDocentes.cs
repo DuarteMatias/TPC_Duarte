@@ -42,8 +42,8 @@ namespace Gestion_de_Alumnos
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.ShowDialog();
+            Application.OpenForms["frmListadoDocentes"].Close();
+            Show();
         }
     }
 }

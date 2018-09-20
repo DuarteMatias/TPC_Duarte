@@ -28,47 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAlta = new System.Windows.Forms.Button();
+            this.btnBaja = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnListadoDocentes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAlta
             // 
-            this.button1.Location = new System.Drawing.Point(158, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 150);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAlta.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAlta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAlta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAlta.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlta.ForeColor = System.Drawing.Color.White;
+            this.btnAlta.Location = new System.Drawing.Point(47, 413);
+            this.btnAlta.Name = "btnAlta";
+            this.btnAlta.Size = new System.Drawing.Size(280, 150);
+            this.btnAlta.TabIndex = 0;
+            this.btnAlta.Text = "ALTA";
+            this.btnAlta.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnBaja
             // 
-            this.button2.Location = new System.Drawing.Point(397, 413);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 150);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBaja.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnBaja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBaja.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaja.ForeColor = System.Drawing.Color.White;
+            this.btnBaja.Location = new System.Drawing.Point(345, 413);
+            this.btnBaja.Name = "btnBaja";
+            this.btnBaja.Size = new System.Drawing.Size(280, 150);
+            this.btnBaja.TabIndex = 0;
+            this.btnBaja.Text = "BAJA";
+            this.btnBaja.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(636, 413);
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(643, 413);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(182, 150);
+            this.button3.Size = new System.Drawing.Size(280, 150);
             this.button3.TabIndex = 0;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Text = "MODIFICACIONES";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // btnListadoDocentes
             // 
-            this.btnListadoDocentes.Location = new System.Drawing.Point(875, 413);
+            this.btnListadoDocentes.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnListadoDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnListadoDocentes.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListadoDocentes.ForeColor = System.Drawing.Color.White;
+            this.btnListadoDocentes.Location = new System.Drawing.Point(941, 413);
             this.btnListadoDocentes.Name = "btnListadoDocentes";
-            this.btnListadoDocentes.Size = new System.Drawing.Size(182, 150);
+            this.btnListadoDocentes.Size = new System.Drawing.Size(280, 150);
             this.btnListadoDocentes.TabIndex = 0;
             this.btnListadoDocentes.Text = "LISTADO DE\r\nDOCENTES";
-            this.btnListadoDocentes.UseVisualStyleBackColor = true;
+            this.btnListadoDocentes.UseVisualStyleBackColor = false;
             this.btnListadoDocentes.Click += new System.EventHandler(this.btnListadoDocentes_Click);
             // 
             // ControlUsuarioDocentes
@@ -77,8 +94,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnListadoDocentes);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBaja);
+            this.Controls.Add(this.btnAlta);
             this.Name = "ControlUsuarioDocentes";
             this.Size = new System.Drawing.Size(1240, 730);
             this.ResumeLayout(false);
@@ -87,8 +104,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAlta;
+        private System.Windows.Forms.Button btnBaja;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnListadoDocentes;
     }

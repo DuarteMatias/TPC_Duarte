@@ -34,8 +34,8 @@
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.controlUsuarioAlumnos1 = new Gestion_de_Alumnos.ControlUsuarioAlumnos();
             this.controlUsuarioDocentes1 = new Gestion_de_Alumnos.ControlUsuarioDocentes();
+            this.controlUsuarioAlumnos1 = new Gestion_de_Alumnos.ControlUsuarioAlumnos();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,19 +116,19 @@
             this.pnlTop.Size = new System.Drawing.Size(1240, 25);
             this.pnlTop.TabIndex = 1;
             // 
-            // controlUsuarioAlumnos1
-            // 
-            this.controlUsuarioAlumnos1.Location = new System.Drawing.Point(200, 170);
-            this.controlUsuarioAlumnos1.Name = "controlUsuarioAlumnos1";
-            this.controlUsuarioAlumnos1.Size = new System.Drawing.Size(1240, 730);
-            this.controlUsuarioAlumnos1.TabIndex = 2;
-            // 
             // controlUsuarioDocentes1
             // 
             this.controlUsuarioDocentes1.Location = new System.Drawing.Point(200, 170);
             this.controlUsuarioDocentes1.Name = "controlUsuarioDocentes1";
             this.controlUsuarioDocentes1.Size = new System.Drawing.Size(1240, 730);
             this.controlUsuarioDocentes1.TabIndex = 3;
+            // 
+            // controlUsuarioAlumnos1
+            // 
+            this.controlUsuarioAlumnos1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioAlumnos1.Name = "controlUsuarioAlumnos1";
+            this.controlUsuarioAlumnos1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioAlumnos1.TabIndex = 2;
             // 
             // MenuPrincipal
             // 
@@ -142,7 +142,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

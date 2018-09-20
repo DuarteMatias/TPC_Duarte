@@ -78,7 +78,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmListadoDocentes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form4";
+            this.Text = "ListadoDocentes";
             this.Load += new System.EventHandler(this.frmListadoDocentes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocentes)).EndInit();
             this.ResumeLayout(false);
