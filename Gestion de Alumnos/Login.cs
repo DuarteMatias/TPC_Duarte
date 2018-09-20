@@ -96,12 +96,17 @@ namespace Gestion_de_Alumnos
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            MenuPrincipal ventana = new MenuPrincipal();
-            ventana.ShowDialog();
-            Application.OpenForms["Login"].Close();
+            //MenuPrincipal ventana = new MenuPrincipal();
+            //ventana.ShowDialog();
+            MenuPrincipal frm = new MenuPrincipal();// I have created object of Form2
+            this.Visible = false;
+            this.Hide();
+            frm.ShowDialog();   //Si se modifica la ubicacion de esta linea, no se cierra el Login
+            this.Close();
+            this.Dispose();
         }
 
-        private void timer1_Tick(object sender, EventArgs e) //va bajando la transparencia para crear efecto de face out
+        private void timer1_Tick(object sender, EventArgs e) //Va bajando la transparencia para crear efecto de face out
         {
             if(this.Opacity > 0.0)
             {

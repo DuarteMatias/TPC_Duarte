@@ -42,6 +42,7 @@
             this.dgvDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDocentes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvDocentes.Location = new System.Drawing.Point(130, 110);
+            this.dgvDocentes.MultiSelect = false;
             this.dgvDocentes.Name = "dgvDocentes";
             this.dgvDocentes.ReadOnly = true;
             this.dgvDocentes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -64,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1440, 15);
+            this.panel1.Size = new System.Drawing.Size(1440, 25);
             this.panel1.TabIndex = 2;
             // 
             // frmListadoDocentes

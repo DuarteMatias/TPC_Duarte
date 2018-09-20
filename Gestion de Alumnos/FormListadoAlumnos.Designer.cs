@@ -40,7 +40,12 @@
             this.dgvAlumnos.AllowUserToDeleteRows = false;
             this.dgvAlumnos.AllowUserToResizeColumns = false;
             this.dgvAlumnos.AllowUserToResizeRows = false;
+            this.dgvAlumnos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAlumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvAlumnos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvAlumnos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlumnos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvAlumnos.GridColor = System.Drawing.Color.DodgerBlue;
@@ -48,7 +53,7 @@
             this.dgvAlumnos.MultiSelect = false;
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAlumnos.Size = new System.Drawing.Size(1200, 700);
+            this.dgvAlumnos.Size = new System.Drawing.Size(1200, 579);
             this.dgvAlumnos.TabIndex = 0;
             // 
             // pnlAlumnos
@@ -57,7 +62,7 @@
             this.pnlAlumnos.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlAlumnos.Location = new System.Drawing.Point(0, 0);
             this.pnlAlumnos.Name = "pnlAlumnos";
-            this.pnlAlumnos.Size = new System.Drawing.Size(1440, 15);
+            this.pnlAlumnos.Size = new System.Drawing.Size(1440, 25);
             this.pnlAlumnos.TabIndex = 1;
             // 
             // btnRegresar
@@ -74,6 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1440, 900);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.pnlAlumnos);
