@@ -42,6 +42,7 @@
             this.btnAltas.TabIndex = 0;
             this.btnAltas.Text = "ALTAS";
             this.btnAltas.UseVisualStyleBackColor = true;
+            this.btnAltas.Click += new System.EventHandler(this.btnAltas_Click);
             // 
             // btnBajas
             // 

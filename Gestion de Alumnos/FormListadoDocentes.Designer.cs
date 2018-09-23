@@ -38,6 +38,8 @@
             // 
             this.dgvDocentes.AllowUserToAddRows = false;
             this.dgvDocentes.AllowUserToDeleteRows = false;
+            this.dgvDocentes.AllowUserToResizeColumns = false;
+            this.dgvDocentes.AllowUserToResizeRows = false;
             this.dgvDocentes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDocentes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;

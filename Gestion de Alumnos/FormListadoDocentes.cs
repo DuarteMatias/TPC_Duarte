@@ -32,6 +32,9 @@ namespace Gestion_de_Alumnos
                     DataGridViewColumn column = dgvDocentes.Columns[i];
                     column.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                 }
+                dgvDocentes.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;//Se cambia el color Default de las columnas
+                dgvDocentes.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;//Se cambia el color Default de las columnas
+                dgvDocentes.EnableHeadersVisualStyles = false;
                 //Se ordenan las columnas de manera manual.
                 dgvDocentes.Columns["Legajo"].DisplayIndex = 0;
                 dgvDocentes.Columns["Nombre"].DisplayIndex = 1;

@@ -22,5 +22,11 @@ namespace Gestion_de_Alumnos
             frmListadoAlumnos alum = new frmListadoAlumnos();
             alum.ShowDialog();
         }
+
+        private void btnAltas_Click(object sender, EventArgs e)
+        {
+            frmAltaAlumnos alta = new frmAltaAlumnos();
+            alta.ShowDialog();
+        }
     }
 }

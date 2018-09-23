@@ -34,8 +34,11 @@ namespace Gestion_de_Alumnos
                 column.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                 }
                 //Lo hice asi porque no encontré otra manera de ordenar las columnas sin que las ordene por lo que contiene la clase.
-                dgvAlumnos.Columns["Legajo"].DisplayIndex = 0;
+                dgvAlumnos.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;//Se cambia el color Default de las columnas
+                dgvAlumnos.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;//Se cambia el color Default de las columnas
+                dgvAlumnos.EnableHeadersVisualStyles = false;
                 dgvAlumnos.Columns["Nombre"].DisplayIndex = 1;
+                dgvAlumnos.Columns["Legajo"].DisplayIndex = 0;
                 dgvAlumnos.Columns["Apellido"].DisplayIndex = 2;
                 dgvAlumnos.Columns["DNI"].DisplayIndex = 3;
                 dgvAlumnos.Columns["Fnac"].DisplayIndex = 4;
