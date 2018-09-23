@@ -38,7 +38,7 @@
             // 
             this.btnAltas.Location = new System.Drawing.Point(122, 377);
             this.btnAltas.Name = "btnAltas";
-            this.btnAltas.Size = new System.Drawing.Size(182, 152);
+            this.btnAltas.Size = new System.Drawing.Size(190, 150);
             this.btnAltas.TabIndex = 0;
             this.btnAltas.Text = "ALTAS";
             this.btnAltas.UseVisualStyleBackColor = true;
@@ -47,7 +47,7 @@
             // 
             this.btnBajas.Location = new System.Drawing.Point(385, 377);
             this.btnBajas.Name = "btnBajas";
-            this.btnBajas.Size = new System.Drawing.Size(182, 152);
+            this.btnBajas.Size = new System.Drawing.Size(190, 150);
             this.btnBajas.TabIndex = 0;
             this.btnBajas.Text = "BAJAS";
             this.btnBajas.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // 
             this.btnModificaciones.Location = new System.Drawing.Point(648, 377);
             this.btnModificaciones.Name = "btnModificaciones";
-            this.btnModificaciones.Size = new System.Drawing.Size(182, 152);
+            this.btnModificaciones.Size = new System.Drawing.Size(190, 150);
             this.btnModificaciones.TabIndex = 0;
             this.btnModificaciones.Text = "MODIFICACIONES";
             this.btnModificaciones.UseVisualStyleBackColor = true;
@@ -65,9 +65,9 @@
             // 
             this.btnListado.Location = new System.Drawing.Point(911, 377);
             this.btnListado.Name = "btnListado";
-            this.btnListado.Size = new System.Drawing.Size(182, 152);
+            this.btnListado.Size = new System.Drawing.Size(190, 150);
             this.btnListado.TabIndex = 0;
-            this.btnListado.Text = "LISTADO";
+            this.btnListado.Text = "LISTADO DE\r\n\r\nALUMNOS";
             this.btnListado.UseVisualStyleBackColor = true;
             this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
             // 

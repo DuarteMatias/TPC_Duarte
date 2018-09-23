@@ -8,6 +8,7 @@ namespace Dominio
 {
     public class Direccion
     {
+        Direccion d = new Direccion();
         public string Domicilio { get; set; }
 
     }

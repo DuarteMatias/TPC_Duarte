@@ -30,15 +30,16 @@ namespace Negocio
                 while (lector.Read())
                 {
                     Alumno aux = new Alumno();
-                    aux.Legajo = lector.GetInt32(0); // SI LO HABILITO ME TIRA ERROR, PREGUNTAR POR QUÉ
+                    aux.Legajo = lector.GetInt32(0);
                     aux.Nombre = lector.GetString(1);
                     aux.Apellido = lector.GetString(2);
                     aux.Fnac = lector.GetDateTime(3);
                     aux.Email = lector.GetString(4);
-                    //aux.Direccion.Domicilio = ;
+                    //aux.Direccion.Domicilio = lector.GetString(5);
                     //aux.Telefono = (int)lector.GetInt64(6);
                     aux.Dni = lector.GetInt32(7);
-                   
+                    
+                                      
                     lista.Add(aux);
                 }
                 return lista;

@@ -36,56 +36,36 @@
             // 
             // btnAlta
             // 
-            this.btnAlta.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAlta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnAlta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAlta.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlta.ForeColor = System.Drawing.Color.White;
-            this.btnAlta.Location = new System.Drawing.Point(47, 413);
+            this.btnAlta.Location = new System.Drawing.Point(122, 377);
             this.btnAlta.Name = "btnAlta";
-            this.btnAlta.Size = new System.Drawing.Size(280, 150);
+            this.btnAlta.Size = new System.Drawing.Size(190, 150);
             this.btnAlta.TabIndex = 0;
-            this.btnAlta.Text = "ALTA";
-            this.btnAlta.UseVisualStyleBackColor = false;
+            this.btnAlta.Text = "ALTAS";
             // 
             // btnBaja
             // 
-            this.btnBaja.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnBaja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBaja.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaja.ForeColor = System.Drawing.Color.White;
-            this.btnBaja.Location = new System.Drawing.Point(345, 413);
+            this.btnBaja.Location = new System.Drawing.Point(385, 377);
             this.btnBaja.Name = "btnBaja";
-            this.btnBaja.Size = new System.Drawing.Size(280, 150);
+            this.btnBaja.Size = new System.Drawing.Size(190, 150);
             this.btnBaja.TabIndex = 0;
-            this.btnBaja.Text = "BAJA";
-            this.btnBaja.UseVisualStyleBackColor = false;
+            this.btnBaja.Text = "BAJAS";
+            this.btnBaja.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(643, 413);
+            this.button3.Location = new System.Drawing.Point(648, 377);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(280, 150);
+            this.button3.Size = new System.Drawing.Size(190, 150);
             this.button3.TabIndex = 0;
             this.button3.Text = "MODIFICACIONES";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // btnListadoDocentes
             // 
-            this.btnListadoDocentes.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnListadoDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnListadoDocentes.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListadoDocentes.ForeColor = System.Drawing.Color.White;
-            this.btnListadoDocentes.Location = new System.Drawing.Point(941, 413);
+            this.btnListadoDocentes.Location = new System.Drawing.Point(911, 377);
             this.btnListadoDocentes.Name = "btnListadoDocentes";
-            this.btnListadoDocentes.Size = new System.Drawing.Size(280, 150);
+            this.btnListadoDocentes.Size = new System.Drawing.Size(190, 150);
             this.btnListadoDocentes.TabIndex = 0;
-            this.btnListadoDocentes.Text = "LISTADO DE\r\nDOCENTES";
-            this.btnListadoDocentes.UseVisualStyleBackColor = false;
+            this.btnListadoDocentes.Text = "LISTADO DE\r\n\r\nDOCENTES";
             this.btnListadoDocentes.Click += new System.EventHandler(this.btnListadoDocentes_Click);
             // 
             // ControlUsuarioDocentes

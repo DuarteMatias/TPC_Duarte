@@ -32,6 +32,13 @@ namespace Gestion_de_Alumnos
                     DataGridViewColumn column = dgvDocentes.Columns[i];
                     column.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                 }
+                //Se ordenan las columnas de manera manual.
+                dgvDocentes.Columns["Legajo"].DisplayIndex = 0;
+                dgvDocentes.Columns["Nombre"].DisplayIndex = 1;
+                dgvDocentes.Columns["Apellido"].DisplayIndex = 2;
+                dgvDocentes.Columns["DNI"].DisplayIndex = 3;
+                dgvDocentes.Columns["Fnac"].DisplayIndex = 4;
+                dgvDocentes.Columns["Email"].DisplayIndex = 5;
             }
             catch (Exception ex)
             {
