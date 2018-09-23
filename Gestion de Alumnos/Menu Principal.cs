@@ -73,5 +73,10 @@ namespace Gestion_de_Alumnos
             SidePanel.Top = btnPadres.Top;
             controlUsuarioPadres1.BringToFront();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -37,17 +37,14 @@
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.controlUsuarioPadres1 = new Gestion_de_Alumnos.ControlUsuarioPadres();
             this.controlUsuarioDocentes1 = new Gestion_de_Alumnos.ControlUsuarioDocentes();
             this.controlUsuarioAlumnos1 = new Gestion_de_Alumnos.ControlUsuarioAlumnos();
-            this.controlUsuarioPadres1 = new Gestion_de_Alumnos.ControlUsuarioPadres();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,8 +141,6 @@
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pnlTop.Controls.Add(this.pictureBox2);
-            this.pnlTop.Controls.Add(this.pictureBox1);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Enabled = false;
             this.pnlTop.Location = new System.Drawing.Point(200, 0);
@@ -153,25 +148,23 @@
             this.pnlTop.Size = new System.Drawing.Size(1240, 25);
             this.pnlTop.TabIndex = 1;
             // 
-            // pictureBox2
+            // btnCerrar
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1181, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 19);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(1400, 25);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(43, 37);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // pictureBox1
+            // controlUsuarioPadres1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1208, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 19);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.controlUsuarioPadres1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioPadres1.Name = "controlUsuarioPadres1";
+            this.controlUsuarioPadres1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioPadres1.TabIndex = 4;
             // 
             // controlUsuarioDocentes1
             // 
@@ -187,19 +180,13 @@
             this.controlUsuarioAlumnos1.Size = new System.Drawing.Size(1240, 730);
             this.controlUsuarioAlumnos1.TabIndex = 2;
             // 
-            // controlUsuarioPadres1
-            // 
-            this.controlUsuarioPadres1.Location = new System.Drawing.Point(200, 170);
-            this.controlUsuarioPadres1.Name = "controlUsuarioPadres1";
-            this.controlUsuarioPadres1.Size = new System.Drawing.Size(1240, 730);
-            this.controlUsuarioPadres1.TabIndex = 4;
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 900);
             this.Controls.Add(this.controlUsuarioPadres1);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.controlUsuarioDocentes1);
             this.Controls.Add(this.controlUsuarioAlumnos1);
             this.Controls.Add(this.pnlTop);
@@ -212,9 +199,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnlTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -229,8 +214,7 @@
         private System.Windows.Forms.Panel SidePanel;
         private ControlUsuarioAlumnos controlUsuarioAlumnos1;
         private ControlUsuarioDocentes controlUsuarioDocentes1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pbInfo;
         private ControlUsuarioPadres controlUsuarioPadres1;
