@@ -51,9 +51,8 @@
       <Name>Dominio</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="ScriptDB\DUARTE_DB.sql" />
+    <Content Include="Duarte_DB\DUARTE_DB.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
