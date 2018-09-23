@@ -1,6 +1,6 @@
 ﻿namespace Gestion_de_Alumnos
 {
-    partial class ControlUsuarioAlumnos
+    partial class ControlUsuarioPadres
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,51 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAltas = new System.Windows.Forms.Button();
-            this.btnBajas = new System.Windows.Forms.Button();
-            this.btnModificaciones = new System.Windows.Forms.Button();
             this.btnListado = new System.Windows.Forms.Button();
+            this.btnModificaciones = new System.Windows.Forms.Button();
+            this.btnBajas = new System.Windows.Forms.Button();
+            this.btnAltas = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnAltas
-            // 
-            this.btnAltas.Location = new System.Drawing.Point(122, 10);
-            this.btnAltas.Name = "btnAltas";
-            this.btnAltas.Size = new System.Drawing.Size(190, 150);
-            this.btnAltas.TabIndex = 0;
-            this.btnAltas.Text = "ALTAS";
-            this.btnAltas.UseVisualStyleBackColor = true;
-            this.btnAltas.Click += new System.EventHandler(this.btnAltas_Click);
-            // 
-            // btnBajas
-            // 
-            this.btnBajas.Location = new System.Drawing.Point(385, 10);
-            this.btnBajas.Name = "btnBajas";
-            this.btnBajas.Size = new System.Drawing.Size(190, 150);
-            this.btnBajas.TabIndex = 0;
-            this.btnBajas.Text = "BAJAS";
-            this.btnBajas.UseVisualStyleBackColor = true;
-            // 
-            // btnModificaciones
-            // 
-            this.btnModificaciones.Location = new System.Drawing.Point(648, 10);
-            this.btnModificaciones.Name = "btnModificaciones";
-            this.btnModificaciones.Size = new System.Drawing.Size(190, 150);
-            this.btnModificaciones.TabIndex = 0;
-            this.btnModificaciones.Text = "MODIFICACIONES";
-            this.btnModificaciones.UseVisualStyleBackColor = true;
             // 
             // btnListado
             // 
-            this.btnListado.Location = new System.Drawing.Point(911, 10);
+            this.btnListado.Location = new System.Drawing.Point(911, 310);
             this.btnListado.Name = "btnListado";
             this.btnListado.Size = new System.Drawing.Size(190, 150);
-            this.btnListado.TabIndex = 0;
-            this.btnListado.Text = "LISTADO DE\r\n\r\nALUMNOS";
+            this.btnListado.TabIndex = 1;
+            this.btnListado.Text = "LISTADO DE\r\n\r\nPADRES";
             this.btnListado.UseVisualStyleBackColor = true;
-            this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
             // 
-            // ControlUsuarioAlumnos
+            // btnModificaciones
+            // 
+            this.btnModificaciones.Location = new System.Drawing.Point(648, 310);
+            this.btnModificaciones.Name = "btnModificaciones";
+            this.btnModificaciones.Size = new System.Drawing.Size(190, 150);
+            this.btnModificaciones.TabIndex = 2;
+            this.btnModificaciones.Text = "MODIFICACIONES";
+            this.btnModificaciones.UseVisualStyleBackColor = true;
+            // 
+            // btnBajas
+            // 
+            this.btnBajas.Location = new System.Drawing.Point(385, 310);
+            this.btnBajas.Name = "btnBajas";
+            this.btnBajas.Size = new System.Drawing.Size(190, 150);
+            this.btnBajas.TabIndex = 3;
+            this.btnBajas.Text = "BAJAS";
+            this.btnBajas.UseVisualStyleBackColor = true;
+            // 
+            // btnAltas
+            // 
+            this.btnAltas.Location = new System.Drawing.Point(122, 310);
+            this.btnAltas.Name = "btnAltas";
+            this.btnAltas.Size = new System.Drawing.Size(190, 150);
+            this.btnAltas.TabIndex = 4;
+            this.btnAltas.Text = "ALTAS";
+            this.btnAltas.UseVisualStyleBackColor = true;
+            // 
+            // ControlUsuarioPadres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,7 +78,7 @@
             this.Controls.Add(this.btnModificaciones);
             this.Controls.Add(this.btnBajas);
             this.Controls.Add(this.btnAltas);
-            this.Name = "ControlUsuarioAlumnos";
+            this.Name = "ControlUsuarioPadres";
             this.Size = new System.Drawing.Size(1240, 730);
             this.ResumeLayout(false);
 
@@ -88,9 +86,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnAltas;
-        private System.Windows.Forms.Button btnBajas;
-        private System.Windows.Forms.Button btnModificaciones;
         private System.Windows.Forms.Button btnListado;
+        private System.Windows.Forms.Button btnModificaciones;
+        private System.Windows.Forms.Button btnBajas;
+        private System.Windows.Forms.Button btnAltas;
     }
 }

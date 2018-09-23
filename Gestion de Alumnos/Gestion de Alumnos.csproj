@@ -67,6 +67,12 @@
     <Compile Include="ControlUsuarioDocentes.Designer.cs">
       <DependentUpon>ControlUsuarioDocentes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlUsuarioPadres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuarioPadres.Designer.cs">
+      <DependentUpon>ControlUsuarioPadres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ControlUsuarioDocentes.resx">
       <DependentUpon>ControlUsuarioDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuarioPadres.resx">
+      <DependentUpon>ControlUsuarioPadres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoAlumnos.resx">
       <DependentUpon>FormListadoAlumnos.cs</DependentUpon>

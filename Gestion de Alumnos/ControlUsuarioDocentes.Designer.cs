@@ -36,7 +36,7 @@
             // 
             // btnAlta
             // 
-            this.btnAlta.Location = new System.Drawing.Point(122, 377);
+            this.btnAlta.Location = new System.Drawing.Point(122, 162);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(190, 150);
             this.btnAlta.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btnBaja
             // 
-            this.btnBaja.Location = new System.Drawing.Point(385, 377);
+            this.btnBaja.Location = new System.Drawing.Point(385, 162);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(190, 150);
             this.btnBaja.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(648, 377);
+            this.button3.Location = new System.Drawing.Point(648, 162);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(190, 150);
             this.button3.TabIndex = 0;
@@ -61,7 +61,7 @@
             // 
             // btnListadoDocentes
             // 
-            this.btnListadoDocentes.Location = new System.Drawing.Point(911, 377);
+            this.btnListadoDocentes.Location = new System.Drawing.Point(911, 162);
             this.btnListadoDocentes.Name = "btnListadoDocentes";
             this.btnListadoDocentes.Size = new System.Drawing.Size(190, 150);
             this.btnListadoDocentes.TabIndex = 0;

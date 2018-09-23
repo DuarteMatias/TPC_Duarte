@@ -30,24 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbInfo = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.btnPadres = new System.Windows.Forms.Button();
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.controlUsuarioDocentes1 = new Gestion_de_Alumnos.ControlUsuarioDocentes();
             this.controlUsuarioAlumnos1 = new Gestion_de_Alumnos.ControlUsuarioAlumnos();
+            this.controlUsuarioPadres1 = new Gestion_de_Alumnos.ControlUsuarioPadres();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.pbInfo);
+            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.SidePanel);
             this.panel1.Controls.Add(this.btnPadres);
             this.panel1.Controls.Add(this.btnDocentes);
@@ -57,6 +64,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 900);
             this.panel1.TabIndex = 0;
+            // 
+            // pbInfo
+            // 
+            this.pbInfo.Image = ((System.Drawing.Image)(resources.GetObject("pbInfo.Image")));
+            this.pbInfo.Location = new System.Drawing.Point(0, 860);
+            this.pbInfo.Name = "pbInfo";
+            this.pbInfo.Size = new System.Drawing.Size(48, 28);
+            this.pbInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbInfo.TabIndex = 5;
+            this.pbInfo.TabStop = false;
+            this.pbInfo.Click += new System.EventHandler(this.pbInfo_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(23, 14);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(144, 132);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // SidePanel
             // 
@@ -79,6 +107,7 @@
             this.btnPadres.TabIndex = 0;
             this.btnPadres.Text = "PADRES";
             this.btnPadres.UseVisualStyleBackColor = false;
+            this.btnPadres.Click += new System.EventHandler(this.btnPadres_Click);
             // 
             // btnDocentes
             // 
@@ -124,16 +153,6 @@
             this.pnlTop.Size = new System.Drawing.Size(1240, 25);
             this.pnlTop.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1208, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 19);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -143,6 +162,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1208, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // controlUsuarioDocentes1
             // 
@@ -158,11 +187,19 @@
             this.controlUsuarioAlumnos1.Size = new System.Drawing.Size(1240, 730);
             this.controlUsuarioAlumnos1.TabIndex = 2;
             // 
+            // controlUsuarioPadres1
+            // 
+            this.controlUsuarioPadres1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioPadres1.Name = "controlUsuarioPadres1";
+            this.controlUsuarioPadres1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioPadres1.TabIndex = 4;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.Controls.Add(this.controlUsuarioPadres1);
             this.Controls.Add(this.controlUsuarioDocentes1);
             this.Controls.Add(this.controlUsuarioAlumnos1);
             this.Controls.Add(this.pnlTop);
@@ -173,9 +210,11 @@
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,5 +231,8 @@
         private ControlUsuarioDocentes controlUsuarioDocentes1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbInfo;
+        private ControlUsuarioPadres controlUsuarioPadres1;
     }
 }

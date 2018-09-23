@@ -61,5 +61,17 @@ namespace Gestion_de_Alumnos
             SidePanel.Top = btnDocentes.Top;
             controlUsuarioDocentes1.BringToFront();
         }
+
+        private void pbInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Elaborado por Duarte Matias.\nADM Copyright reserved 2018.\nConsultas y/o sugerencias a duarte-matias@live.com.ar");
+        }
+
+        private void btnPadres_Click(object sender, EventArgs e)
+        {
+            SidePanel.Height = btnPadres.Height;
+            SidePanel.Top = btnPadres.Top;
+            controlUsuarioPadres1.BringToFront();
+        }
     }
 }
