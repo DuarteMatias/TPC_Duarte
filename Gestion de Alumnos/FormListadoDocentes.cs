@@ -50,7 +50,7 @@ namespace Gestion_de_Alumnos
             }
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Application.OpenForms["frmListadoDocentes"].Close();
             Show();

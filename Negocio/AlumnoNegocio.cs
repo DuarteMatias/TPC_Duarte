@@ -54,5 +54,17 @@ namespace Negocio
                 conexion.Close();
             }
         }
+
+        public void Insertar(string nombre, string apellido, DateTime fnac, string email, string direccion, Int64 telefono, Int32 dni)
+        {
+            SqlConnection conexion = new SqlConnection();
+
+            SqlCommand comando = new SqlCommand();
+
+
+            conexion.Open();
+            comando.CommandText="insert into Alumnos values('"+nombre+"','" + apellido+"','"+ fnac+"','" + email+"','" + direccion +"','" + telefono+"','" + dni+"')";
+            comando.ExecuteNonQuery();
+        }
     }
 }

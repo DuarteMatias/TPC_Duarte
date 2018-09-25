@@ -79,6 +79,12 @@
     <Compile Include="FormListadoAlumnos.Designer.cs">
       <DependentUpon>FormListadoAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListadoDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoDocentes.Designer.cs">
+      <DependentUpon>FormListadoDocentes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,12 +96,6 @@
     </Compile>
     <Compile Include="Menu Principal.Designer.cs">
       <DependentUpon>Menu Principal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormListadoDocentes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormListadoDocentes.Designer.cs">
-      <DependentUpon>FormListadoDocentes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,14 +114,14 @@
     <EmbeddedResource Include="FormListadoAlumnos.resx">
       <DependentUpon>FormListadoAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoDocentes.resx">
+      <DependentUpon>FormListadoDocentes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Principal.resx">
       <DependentUpon>Menu Principal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormListadoDocentes.resx">
-      <DependentUpon>FormListadoDocentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
