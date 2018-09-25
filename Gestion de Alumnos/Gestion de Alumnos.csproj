@@ -73,6 +73,12 @@
     <Compile Include="ControlUsuarioPadres.Designer.cs">
       <DependentUpon>ControlUsuarioPadres.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListadoAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoAlumnos.Designer.cs">
+      <DependentUpon>FormListadoAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,12 +90,6 @@
     </Compile>
     <Compile Include="Menu Principal.Designer.cs">
       <DependentUpon>Menu Principal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormListadoAlumnos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormListadoAlumnos.Designer.cs">
-      <DependentUpon>FormListadoAlumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormListadoDocentes.cs">
       <SubType>Form</SubType>

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Dominio;
 using Negocio;
 
 namespace Gestion_de_Alumnos
@@ -19,9 +18,9 @@ namespace Gestion_de_Alumnos
             InitializeComponent();
         }
 
-        private void frmAlumnos_Load(object sender, EventArgs e)
+        private void frmListadoAlumnos_Load(object sender, EventArgs e)
         {
-             AlumnoNegocio alum = new AlumnoNegocio();
+            AlumnoNegocio alum = new AlumnoNegocio();
 
             try
             {
@@ -30,20 +29,19 @@ namespace Gestion_de_Alumnos
                 int i;
                 for (i = 0; i < 6; i++)
                 {
-                DataGridViewColumn column = dgvAlumnos.Columns[i];
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                    DataGridViewColumn column = dgvAlumnos.Columns[i];
+                    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                 }
-                //Lo hice asi porque no encontré otra manera de ordenar las columnas sin que las ordene por lo que contiene la clase.
                 dgvAlumnos.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;//Se cambia el color Default de las columnas
                 dgvAlumnos.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;//Se cambia el color Default de las columnas
                 dgvAlumnos.EnableHeadersVisualStyles = false;
-                dgvAlumnos.Columns["Nombre"].DisplayIndex = 1;
+                //Se ordenan las columnas de manera manual.
                 dgvAlumnos.Columns["Legajo"].DisplayIndex = 0;
+                dgvAlumnos.Columns["Nombre"].DisplayIndex = 1;
                 dgvAlumnos.Columns["Apellido"].DisplayIndex = 2;
                 dgvAlumnos.Columns["DNI"].DisplayIndex = 3;
                 dgvAlumnos.Columns["Fnac"].DisplayIndex = 4;
                 dgvAlumnos.Columns["Email"].DisplayIndex = 5;
-
             }
             catch (Exception ex)
             {
@@ -54,8 +52,8 @@ namespace Gestion_de_Alumnos
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            Application.OpenForms["frmListadoAlumnos"].Close();
-            Show();
-        } 
+                Application.OpenForms["frmListadoAlumnos"].Close();
+                Show();
+        }
     }
 }
