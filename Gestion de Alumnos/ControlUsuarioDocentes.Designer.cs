@@ -41,6 +41,7 @@
             this.btnAlta.Size = new System.Drawing.Size(190, 150);
             this.btnAlta.TabIndex = 0;
             this.btnAlta.Text = "ALTAS";
+            this.btnAlta.Click += new System.EventHandler(this.btnAlta_Click);
             // 
             // btnBaja
             // 

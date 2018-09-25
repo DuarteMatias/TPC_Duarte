@@ -22,5 +22,11 @@ namespace Gestion_de_Alumnos
             frmListadoDocentes doc = new frmListadoDocentes();
             doc.ShowDialog();
         }
+
+        private void btnAlta_Click(object sender, EventArgs e)
+        {
+            frmAltaDocentes alta = new frmAltaDocentes();
+            alta.ShowDialog();
+        }
     }
 }

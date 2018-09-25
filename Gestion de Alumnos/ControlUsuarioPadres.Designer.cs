@@ -69,6 +69,7 @@
             this.btnAltas.TabIndex = 4;
             this.btnAltas.Text = "ALTAS";
             this.btnAltas.UseVisualStyleBackColor = true;
+            this.btnAltas.Click += new System.EventHandler(this.btnAltas_Click);
             // 
             // ControlUsuarioPadres
             // 

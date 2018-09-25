@@ -39,9 +39,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAñadir = new System.Windows.Forms.Button();
             this.gbSexo = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -146,30 +146,30 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.btnRegresar);
             this.panel4.Controls.Add(this.btnGuardar);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btnAñadir);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1277, 10);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(163, 880);
             this.panel4.TabIndex = 6;
             // 
-            // button2
+            // btnRegresar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Location = new System.Drawing.Point(0, 824);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 57);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "REGRESAR AL\r\nMENU PRINCIPAL\r\n";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnRegresar.Location = new System.Drawing.Point(0, 824);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(163, 57);
+            this.btnRegresar.TabIndex = 0;
+            this.btnRegresar.Text = "REGRESAR AL\r\nMENU PRINCIPAL\r\n";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnGuardar
             // 
@@ -183,23 +183,23 @@
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(163, 69);
             this.btnGuardar.TabIndex = 0;
-            this.btnGuardar.Text = "GUARDAR\r\n\r\nALUMNO";
+            this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnAñadir
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Location = new System.Drawing.Point(0, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 69);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "AÑADIR\r\n\r\nIMAGEN";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAñadir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnAñadir.FlatAppearance.BorderSize = 0;
+            this.btnAñadir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAñadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAñadir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAñadir.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnAñadir.Location = new System.Drawing.Point(0, 75);
+            this.btnAñadir.Name = "btnAñadir";
+            this.btnAñadir.Size = new System.Drawing.Size(163, 69);
+            this.btnAñadir.TabIndex = 0;
+            this.btnAñadir.Text = "AÑADIR\r\n\r\nIMAGEN";
+            this.btnAñadir.UseVisualStyleBackColor = false;
             // 
             // gbSexo
             // 
@@ -403,9 +403,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAñadir;
         public System.Windows.Forms.TextBox txtNombres;
         public System.Windows.Forms.TextBox txtApellido;
         public System.Windows.Forms.TextBox txtDNI;
