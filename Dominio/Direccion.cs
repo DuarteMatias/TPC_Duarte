@@ -8,8 +8,6 @@ namespace Dominio
 {
     public class Direccion
     {
-       
-        public string Domicilio { get; set; }
-
+        string domicilio { get; set; }
     }
 }

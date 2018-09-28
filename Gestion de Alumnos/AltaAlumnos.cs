@@ -17,7 +17,7 @@ namespace Gestion_de_Alumnos
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             this.Hide();

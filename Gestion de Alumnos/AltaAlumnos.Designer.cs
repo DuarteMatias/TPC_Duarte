@@ -169,7 +169,7 @@
             this.btnRegresar.TabIndex = 0;
             this.btnRegresar.Text = "REGRESAR AL\r\nMENU PRINCIPAL\r\n";
             this.btnRegresar.UseVisualStyleBackColor = false;
-            this.btnRegresar.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnGuardar
             // 

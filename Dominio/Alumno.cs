@@ -9,7 +9,6 @@ namespace Dominio
     public class Alumno : Estudiante
     {
         public string Email { set; get; }
-        public Direccion Direccion { set; get; }
         public Telefono Telefono { set; get; }
     }
 }

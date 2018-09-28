@@ -18,6 +18,7 @@ namespace Negocio
 
             SqlDataReader lector;
             IList<Docente> lista = new List<Docente>();
+
             try
             {
                 conexion.ConnectionString = "initial catalog= GESTION; data source =.; integrated security=sspi";
@@ -35,9 +36,9 @@ namespace Negocio
                     aux.Apellido = lector.GetString(2);
                     aux.Fnac = lector.GetDateTime(3);
                     aux.Email = lector.GetString(4);
-                    //aux.Direccion.Domicilio = ;
+                    //aux.Direccion= 
                     //aux.Telefono = (int)lector.GetInt64(6);
-                    aux.Dni = lector.GetInt32(7);
+                    aux.Dni = lector.GetString(7);
 
 
                     lista.Add(aux);

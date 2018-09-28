@@ -11,7 +11,8 @@ namespace Dominio
         public string Nombre { set; get; }
         public string Apellido { set; get; }
         public DateTime Fnac { set; get; }
+        public Direccion Direccion { get; set; }
         public char Sexo { set; get; }
-        public int Dni { set; get; }
+        public string Dni { set; get; }
     }
 }
