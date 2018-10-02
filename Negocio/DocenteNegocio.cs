@@ -34,7 +34,7 @@ namespace Negocio
                     aux.Legajo = lector.GetInt32(0); // SI LO HABILITO ME TIRA ERROR, PREGUNTAR POR QUÉ
                     aux.Nombre = lector.GetString(1);
                     aux.Apellido = lector.GetString(2);
-                    aux.Fnac = lector.GetDateTime(3);
+                    aux.FechaNac = lector.GetDateTime(3);
                     aux.Email = lector.GetString(4);
                     //aux.Direccion= 
                     //aux.Telefono = (int)lector.GetInt64(6);

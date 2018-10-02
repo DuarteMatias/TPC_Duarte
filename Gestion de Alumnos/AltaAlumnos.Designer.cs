@@ -43,8 +43,8 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnAñadir = new System.Windows.Forms.Button();
             this.gbSexo = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rBtnFemenino = new System.Windows.Forms.RadioButton();
+            this.rBtnMasculino = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -193,6 +193,7 @@
             this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnAñadir
             // 
@@ -212,8 +213,8 @@
             // 
             // gbSexo
             // 
-            this.gbSexo.Controls.Add(this.radioButton2);
-            this.gbSexo.Controls.Add(this.radioButton1);
+            this.gbSexo.Controls.Add(this.rBtnFemenino);
+            this.gbSexo.Controls.Add(this.rBtnMasculino);
             this.gbSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbSexo.ForeColor = System.Drawing.Color.White;
             this.gbSexo.Location = new System.Drawing.Point(153, 274);
@@ -223,27 +224,27 @@
             this.gbSexo.TabStop = false;
             this.gbSexo.Text = "SEXO";
             // 
-            // radioButton2
+            // rBtnFemenino
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(248, 40);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(152, 35);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Femenino";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rBtnFemenino.AutoSize = true;
+            this.rBtnFemenino.Location = new System.Drawing.Point(248, 40);
+            this.rBtnFemenino.Name = "rBtnFemenino";
+            this.rBtnFemenino.Size = new System.Drawing.Size(152, 35);
+            this.rBtnFemenino.TabIndex = 1;
+            this.rBtnFemenino.TabStop = true;
+            this.rBtnFemenino.Text = "Femenino";
+            this.rBtnFemenino.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rBtnMasculino
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(50, 40);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(154, 35);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Masculino";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rBtnMasculino.AutoSize = true;
+            this.rBtnMasculino.Location = new System.Drawing.Point(50, 40);
+            this.rBtnMasculino.Name = "rBtnMasculino";
+            this.rBtnMasculino.Size = new System.Drawing.Size(154, 35);
+            this.rBtnMasculino.TabIndex = 0;
+            this.rBtnMasculino.TabStop = true;
+            this.rBtnMasculino.Text = "Masculino";
+            this.rBtnMasculino.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -415,8 +416,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox gbSexo;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rBtnFemenino;
+        private System.Windows.Forms.RadioButton rBtnMasculino;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

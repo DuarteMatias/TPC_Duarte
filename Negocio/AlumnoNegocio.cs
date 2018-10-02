@@ -25,7 +25,7 @@ namespace Negocio
             {
                 conexion.ConnectionString = "initial catalog= GESTION; data source =.; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "select legajo,nombre,apellido,fnac,email,direccion,telefono,dni from alumnos";
+                comando.CommandText = "select legajo,nombre,apellido,fechanac,email,direccion,telefono,dni from alumnos";
                 comando.Connection = conexion;
                 conexion.Open();
                 lector = comando.ExecuteReader();
@@ -36,11 +36,11 @@ namespace Negocio
                     aux.Legajo = lector.GetInt32(0);
                     aux.Nombre = lector.GetString(1);
                     aux.Apellido = lector.GetString(2);
-                    aux.Fnac = lector.GetDateTime(3);
-                    aux.Email = lector.GetString(4);
+                    aux.FechaNac = lector.GetDateTime(3);
+                    //aux.Email = lector.GetString(4);
                     //aux.Direccion = lector.GetString(5);
                     //aux.Telefono = (int)lector.GetInt64(6);
-                    aux.Dni = lector.GetString(7);
+                    //aux.Dni = lector.GetString(7);
                     
                                       
                     lista.Add(aux);
@@ -56,6 +56,35 @@ namespace Negocio
             {
                 conexion.Close();
             }
+        }
+
+        public void alta(Alumno nuevo)
+        {
+            AccesoDatos conexion = null;
+            string consulta = "";
+            try
+            {
+                conexion = new AccesoDatos();
+                consulta = "insert into ALUMNOS (Nombre,Apellido,Fnac)";
+                consulta= consulta + "  values ('" + nuevo.Nombre + "','" + nuevo.Apellido + "','"+nuevo.FechaNac+ "')";
+
+                conexion.setearConsulta(consulta);
+
+                conexion.abrirConexion();
+                conexion.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                if (conexion != null)
+                    conexion.cerrarConexion();
+            }
+
+
         }
     }
 }

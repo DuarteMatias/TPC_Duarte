@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
+using Dominio;
 using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
@@ -71,6 +72,33 @@ namespace Gestion_de_Alumnos
                 e.Handled = true;
 
                 return;
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            AlumnoNegocio alum = new AlumnoNegocio();
+            Alumno nuevo = new Alumno();
+            try
+            {
+                nuevo.Nombre = txtNombres.Text;
+                nuevo.Apellido = txtApellido.Text;
+                nuevo.FechaNac = dtpFechaNacimiento.Value;
+                if (rBtnMasculino.Checked) nuevo.Sexo = 'M';
+                else if (rBtnFemenino.Checked) nuevo.Sexo = 'F';
+                nuevo.Dni = txtDNI.Text;
+                nuevo.Email = txtEmail.Text;
+                //nuevo.Direccion=
+                //nuevo.Telefono = txtTelefono.Text;
+
+                alum.alta(nuevo);
+                MessageBox.Show("ALUMNO GUARDADO CON ÉXITO"); 
+                this.Close(); //Regresa al control de usuario alumno
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
             }
         }
     }

@@ -40,7 +40,7 @@ namespace Gestion_de_Alumnos
                 dgvAlumnos.Columns["Nombre"].DisplayIndex = 1;
                 dgvAlumnos.Columns["Apellido"].DisplayIndex = 2;
                 dgvAlumnos.Columns["DNI"].DisplayIndex = 3;
-                dgvAlumnos.Columns["Fnac"].DisplayIndex = 4;
+                dgvAlumnos.Columns["FechaNac"].DisplayIndex = 4;
                 dgvAlumnos.Columns["Email"].DisplayIndex = 5;
             }
             catch (Exception ex)
