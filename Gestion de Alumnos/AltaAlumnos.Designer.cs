@@ -50,12 +50,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.pbFotoAlumno = new System.Windows.Forms.PictureBox();
             this.lblFotografía = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.gbSexo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoAlumno)).BeginInit();
@@ -74,11 +74,12 @@
             // 
             // txtNombres
             // 
+            this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.Location = new System.Drawing.Point(325, 121);
             this.txtNombres.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombres.MaxLength = 10;
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(383, 20);
+            this.txtNombres.Size = new System.Drawing.Size(383, 24);
             this.txtNombres.TabIndex = 0;
             this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
@@ -95,10 +96,11 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.Location = new System.Drawing.Point(325, 173);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(383, 20);
+            this.txtApellido.Size = new System.Drawing.Size(383, 24);
             this.txtApellido.TabIndex = 1;
             this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
@@ -256,10 +258,11 @@
             // 
             // txtDNI
             // 
+            this.txtDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDNI.Location = new System.Drawing.Point(325, 410);
             this.txtDNI.Margin = new System.Windows.Forms.Padding(2);
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(383, 20);
+            this.txtDNI.Size = new System.Drawing.Size(383, 24);
             this.txtDNI.TabIndex = 4;
             this.txtDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDNI_KeyPress);
             // 
@@ -276,10 +279,11 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(325, 466);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(383, 20);
+            this.txtEmail.Size = new System.Drawing.Size(383, 24);
             this.txtEmail.TabIndex = 5;
             // 
             // label6
@@ -292,14 +296,6 @@
             this.label6.Size = new System.Drawing.Size(169, 31);
             this.label6.TabIndex = 0;
             this.label6.Text = "DIRECCION";
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(173, 281);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(362, 20);
-            this.txtDireccion.TabIndex = 6;
             // 
             // comboBox1
             // 
@@ -327,10 +323,11 @@
             // 
             // txtTelefono
             // 
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.Location = new System.Drawing.Point(325, 622);
             this.txtTelefono.MaxLength = 20;
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(187, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(187, 24);
             this.txtTelefono.TabIndex = 8;
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
@@ -355,6 +352,16 @@
             this.lblFotografía.Size = new System.Drawing.Size(192, 31);
             this.lblFotografía.TabIndex = 0;
             this.lblFotografía.Text = "FOTOGRAFIA";
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.Location = new System.Drawing.Point(325, 516);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDireccion.MaxLength = 50;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(383, 24);
+            this.txtDireccion.TabIndex = 5;
             // 
             // frmAltaAlumnos
             // 
@@ -422,9 +429,9 @@
         public System.Windows.Forms.TextBox txtApellido;
         public System.Windows.Forms.TextBox txtDNI;
         public System.Windows.Forms.TextBox txtEmail;
-        public System.Windows.Forms.TextBox txtDireccion;
         public System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.PictureBox pbFotoAlumno;
         private System.Windows.Forms.Label lblFotografía;
+        public System.Windows.Forms.TextBox txtDireccion;
     }
 }
