@@ -75,10 +75,11 @@
             // txtNombres
             // 
             this.txtNombres.Location = new System.Drawing.Point(296, 124);
-            this.txtNombres.MaxLength = 10;
+            this.txtNombres.MaxLength = 30;
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(383, 20);
             this.txtNombres.TabIndex = 0;
+            this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // label2
             // 
@@ -94,9 +95,11 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(296, 177);
+            this.txtApellido.MaxLength = 30;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(383, 20);
             this.txtApellido.TabIndex = 1;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // label3
             // 
@@ -159,10 +162,10 @@
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnRegresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
             this.btnRegresar.Location = new System.Drawing.Point(0, 824);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(163, 57);
@@ -175,10 +178,10 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(0, 219);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(163, 69);
@@ -190,10 +193,10 @@
             // 
             this.btnAñadir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnAñadir.FlatAppearance.BorderSize = 0;
-            this.btnAñadir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAñadir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.btnAñadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAñadir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAñadir.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnAñadir.ForeColor = System.Drawing.Color.White;
             this.btnAñadir.Location = new System.Drawing.Point(0, 75);
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Size = new System.Drawing.Size(163, 69);
@@ -250,9 +253,11 @@
             // txtDNI
             // 
             this.txtDNI.Location = new System.Drawing.Point(296, 413);
+            this.txtDNI.MaxLength = 15;
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(383, 20);
             this.txtDNI.TabIndex = 4;
+            this.txtDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDNI_KeyPress);
             // 
             // label5
             // 
@@ -268,6 +273,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(296, 463);
+            this.txtEmail.MaxLength = 50;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(383, 20);
             this.txtEmail.TabIndex = 5;
@@ -286,6 +292,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(317, 518);
+            this.txtDireccion.MaxLength = 50;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(362, 20);
             this.txtDireccion.TabIndex = 6;
@@ -321,6 +328,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(187, 20);
             this.txtTelefono.TabIndex = 8;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // pbFotoAlumno
             // 

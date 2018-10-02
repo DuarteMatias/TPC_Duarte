@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Dominio;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 namespace Negocio
 {
@@ -55,17 +56,6 @@ namespace Negocio
             {
                 conexion.Close();
             }
-        }
-
-        public void Guardar ()
-        {
-            SqlConnection conexion = new SqlConnection();
-
-            SqlCommand comando = new SqlCommand();
-
-            conexion.Open();
-            SqlCommand cmd = new SqlCommand("",conexion);
-            cmd.CommandType = CommandType.StoredProcedure;
         }
     }
 }
