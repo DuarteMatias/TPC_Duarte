@@ -50,12 +50,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTelefono = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.pbFotoAlumno = new System.Windows.Forms.PictureBox();
             this.lblFotografía = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lblLegajo = new System.Windows.Forms.Label();
+            this.lblNumLegajo = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.gbSexo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoAlumno)).BeginInit();
@@ -77,11 +79,10 @@
             this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombres.Location = new System.Drawing.Point(325, 121);
             this.txtNombres.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNombres.MaxLength = 10;
+            this.txtNombres.MaxLength = 30;
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(383, 24);
             this.txtNombres.TabIndex = 0;
-            this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // label2
             // 
@@ -99,10 +100,10 @@
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.Location = new System.Drawing.Point(325, 173);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
+            this.txtApellido.MaxLength = 30;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(383, 24);
             this.txtApellido.TabIndex = 1;
-            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // label3
             // 
@@ -262,6 +263,7 @@
             this.txtDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDNI.Location = new System.Drawing.Point(325, 410);
             this.txtDNI.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDNI.MaxLength = 15;
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(383, 24);
             this.txtDNI.TabIndex = 4;
@@ -283,6 +285,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(325, 466);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.MaxLength = 30;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(383, 24);
             this.txtEmail.TabIndex = 5;
@@ -298,18 +301,18 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "DIRECCION";
             // 
-            // comboBox1
+            // cmbTelefono
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbTelefono.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTelefono.FormattingEnabled = true;
+            this.cmbTelefono.Items.AddRange(new object[] {
             "Particular",
             "Celular",
             "Otro"});
-            this.comboBox1.Location = new System.Drawing.Point(325, 574);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cmbTelefono.Location = new System.Drawing.Point(325, 574);
+            this.cmbTelefono.Name = "cmbTelefono";
+            this.cmbTelefono.Size = new System.Drawing.Size(187, 21);
+            this.cmbTelefono.TabIndex = 7;
             // 
             // label7
             // 
@@ -364,6 +367,26 @@
             this.txtDireccion.Size = new System.Drawing.Size(383, 24);
             this.txtDireccion.TabIndex = 5;
             // 
+            // lblLegajo
+            // 
+            this.lblLegajo.AutoSize = true;
+            this.lblLegajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLegajo.ForeColor = System.Drawing.Color.White;
+            this.lblLegajo.Location = new System.Drawing.Point(147, 68);
+            this.lblLegajo.Name = "lblLegajo";
+            this.lblLegajo.Size = new System.Drawing.Size(121, 31);
+            this.lblLegajo.TabIndex = 0;
+            this.lblLegajo.Text = "LEGAJO";
+            // 
+            // lblNumLegajo
+            // 
+            this.lblNumLegajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumLegajo.ForeColor = System.Drawing.Color.White;
+            this.lblNumLegajo.Location = new System.Drawing.Point(323, 69);
+            this.lblNumLegajo.Name = "lblNumLegajo";
+            this.lblNumLegajo.Size = new System.Drawing.Size(54, 31);
+            this.lblNumLegajo.TabIndex = 0;
+            // 
             // frmAltaAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,7 +394,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1440, 900);
             this.Controls.Add(this.pbFotoAlumno);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbTelefono);
             this.Controls.Add(this.gbSexo);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -391,11 +414,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombres);
+            this.Controls.Add(this.lblNumLegajo);
+            this.Controls.Add(this.lblLegajo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAltaAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AltaAlumnos";
+            this.Load += new System.EventHandler(this.frmAltaAlumnos_Load);
             this.panel4.ResumeLayout(false);
             this.gbSexo.ResumeLayout(false);
             this.gbSexo.PerformLayout();
@@ -421,7 +447,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTelefono;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnGuardar;
@@ -434,5 +460,7 @@
         private System.Windows.Forms.PictureBox pbFotoAlumno;
         private System.Windows.Forms.Label lblFotografía;
         public System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label lblLegajo;
+        public System.Windows.Forms.Label lblNumLegajo;
     }
 }

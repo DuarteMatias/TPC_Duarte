@@ -12,7 +12,7 @@ namespace Dominio
         public string Apellido { set; get; }
         public DateTime FechaNac { set; get; }
         public Direccion Direccion { get; set; }
-        public char Sexo { set; get; }
+        public string Sexo { set; get; }
         public string Dni { set; get; }
     }
 }

@@ -15,9 +15,7 @@ namespace Gestion_de_Alumnos
         public MenuPrincipal()
         {
             InitializeComponent();
-            SidePanel.Height = btnAlumnos.Height;
-            SidePanel.Top = btnAlumnos.Top;
-            controlUsuarioAlumnos1.BringToFront();
+            controlUsuarioLogo1.BringToFront(); //TODO ver como puedo hacer para sacar el primer sidepanel
         }
 
         private void MenuPrincipal_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
@@ -64,7 +62,7 @@ namespace Gestion_de_Alumnos
 
         private void pbInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Elaborado por Duarte Matias.\nADM Copyright reserved 2018.\nConsultas y/o sugerencias a duarte-matias@live.com.ar");
+            MessageBox.Show("Elaborado por Duarte Matias.\nAMS Copyright reserved 2018.\nConsultas y/o sugerencias a duarte-matias@live.com.ar");
         }
 
         private void btnPadres_Click(object sender, EventArgs e)
@@ -74,14 +72,14 @@ namespace Gestion_de_Alumnos
             controlUsuarioPadres1.BringToFront();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

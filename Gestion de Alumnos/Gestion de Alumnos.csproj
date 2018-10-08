@@ -67,6 +67,12 @@
     <Compile Include="AltaPadres.Designer.cs">
       <DependentUpon>AltaPadres.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaAlumno.Designer.cs">
+      <DependentUpon>BusquedaAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlUsuarioAlumnos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="ControlUsuarioDocentes.Designer.cs">
       <DependentUpon>ControlUsuarioDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuarioLogo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuarioLogo.Designer.cs">
+      <DependentUpon>ControlUsuarioLogo.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlUsuarioPadres.cs">
       <SubType>UserControl</SubType>
@@ -109,6 +121,12 @@
     <Compile Include="Menu Principal.Designer.cs">
       <DependentUpon>Menu Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="MSB Guardado con exito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSB Guardado con exito.Designer.cs">
+      <DependentUpon>MSB Guardado con exito.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AltaAlumnos.resx">
@@ -120,11 +138,17 @@
     <EmbeddedResource Include="AltaPadres.resx">
       <DependentUpon>AltaPadres.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaAlumno.resx">
+      <DependentUpon>BusquedaAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlUsuarioAlumnos.resx">
       <DependentUpon>ControlUsuarioAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlUsuarioDocentes.resx">
       <DependentUpon>ControlUsuarioDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuarioLogo.resx">
+      <DependentUpon>ControlUsuarioLogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlUsuarioPadres.resx">
       <DependentUpon>ControlUsuarioPadres.cs</DependentUpon>
@@ -140,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Principal.resx">
       <DependentUpon>Menu Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSB Guardado con exito.resx">
+      <DependentUpon>MSB Guardado con exito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

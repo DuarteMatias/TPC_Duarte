@@ -36,18 +36,21 @@
             this.btnPadres = new System.Windows.Forms.Button();
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
-            this.controlUsuarioPadres1 = new Gestion_de_Alumnos.ControlUsuarioPadres();
-            this.controlUsuarioDocentes1 = new Gestion_de_Alumnos.ControlUsuarioDocentes();
-            this.controlUsuarioAlumnos1 = new Gestion_de_Alumnos.ControlUsuarioAlumnos();
             this.pnltop = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.controlUsuarioLogo1 = new Gestion_de_Alumnos.ControlUsuarioLogo();
+            this.controlUsuarioPadres1 = new Gestion_de_Alumnos.ControlUsuarioPadres();
+            this.controlUsuarioDocentes1 = new Gestion_de_Alumnos.ControlUsuarioDocentes();
+            this.controlUsuarioAlumnos1 = new Gestion_de_Alumnos.ControlUsuarioAlumnos();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnltop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -141,27 +144,6 @@
             this.btnAlumnos.UseVisualStyleBackColor = false;
             this.btnAlumnos.Click += new System.EventHandler(this.btnAlumnos_Click);
             // 
-            // controlUsuarioPadres1
-            // 
-            this.controlUsuarioPadres1.Location = new System.Drawing.Point(200, 170);
-            this.controlUsuarioPadres1.Name = "controlUsuarioPadres1";
-            this.controlUsuarioPadres1.Size = new System.Drawing.Size(1240, 730);
-            this.controlUsuarioPadres1.TabIndex = 4;
-            // 
-            // controlUsuarioDocentes1
-            // 
-            this.controlUsuarioDocentes1.Location = new System.Drawing.Point(200, 170);
-            this.controlUsuarioDocentes1.Name = "controlUsuarioDocentes1";
-            this.controlUsuarioDocentes1.Size = new System.Drawing.Size(1240, 730);
-            this.controlUsuarioDocentes1.TabIndex = 3;
-            // 
-            // controlUsuarioAlumnos1
-            // 
-            this.controlUsuarioAlumnos1.Location = new System.Drawing.Point(200, 170);
-            this.controlUsuarioAlumnos1.Name = "controlUsuarioAlumnos1";
-            this.controlUsuarioAlumnos1.Size = new System.Drawing.Size(1240, 730);
-            this.controlUsuarioAlumnos1.TabIndex = 2;
-            // 
             // pnltop
             // 
             this.pnltop.BackColor = System.Drawing.Color.DodgerBlue;
@@ -195,13 +177,54 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // controlUsuarioLogo1
+            // 
+            this.controlUsuarioLogo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.controlUsuarioLogo1.Location = new System.Drawing.Point(199, 170);
+            this.controlUsuarioLogo1.Name = "controlUsuarioLogo1";
+            this.controlUsuarioLogo1.Size = new System.Drawing.Size(1241, 730);
+            this.controlUsuarioLogo1.TabIndex = 6;
+            // 
+            // controlUsuarioPadres1
+            // 
+            this.controlUsuarioPadres1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioPadres1.Name = "controlUsuarioPadres1";
+            this.controlUsuarioPadres1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioPadres1.TabIndex = 4;
+            // 
+            // controlUsuarioDocentes1
+            // 
+            this.controlUsuarioDocentes1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioDocentes1.Name = "controlUsuarioDocentes1";
+            this.controlUsuarioDocentes1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioDocentes1.TabIndex = 3;
+            // 
+            // controlUsuarioAlumnos1
+            // 
+            this.controlUsuarioAlumnos1.Location = new System.Drawing.Point(200, 170);
+            this.controlUsuarioAlumnos1.Name = "controlUsuarioAlumnos1";
+            this.controlUsuarioAlumnos1.Size = new System.Drawing.Size(1240, 730);
+            this.controlUsuarioAlumnos1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(200, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1240, 87);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1440, 900);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.controlUsuarioLogo1);
             this.Controls.Add(this.pnltop);
             this.Controls.Add(this.controlUsuarioPadres1);
             this.Controls.Add(this.controlUsuarioDocentes1);
@@ -218,6 +241,7 @@
             this.pnltop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -237,5 +261,7 @@
         private System.Windows.Forms.Panel pnltop;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
+        private ControlUsuarioLogo controlUsuarioLogo1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

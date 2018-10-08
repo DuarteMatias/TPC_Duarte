@@ -21,7 +21,16 @@ namespace Gestion_de_Alumnos
         public frmAltaAlumnos()
         {
             InitializeComponent();
+            lblNumLegajo.Text = (AlumnoNegocio.UltimoLegajo() + 1).ToString();
         }
+
+        public frmAltaAlumnos(Alumno modi)
+        {
+            InitializeComponent();
+            alumno = modi;
+        }
+
+        private Alumno alumno = null;
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
@@ -31,16 +40,16 @@ namespace Gestion_de_Alumnos
             this.Dispose();
         }
 
-        private void txtNombres_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+        //private void txtNombres_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
 
-            {
-                e.Handled = true;
+        //    {
+        //        e.Handled = true;
 
-                return;
-            }
-        }
+        //        return;
+        //    }
+        //}
 
         private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -78,27 +87,58 @@ namespace Gestion_de_Alumnos
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             AlumnoNegocio alum = new AlumnoNegocio();
-            Alumno nuevo = new Alumno();
             try
             {
-                nuevo.Nombre = txtNombres.Text;
-                nuevo.Apellido = txtApellido.Text;
-                nuevo.FechaNac = dtpFechaNacimiento.Value;
-                if (rBtnMasculino.Checked) nuevo.Sexo = 'M';
-                else if (rBtnFemenino.Checked) nuevo.Sexo = 'F';
-                nuevo.Dni = txtDNI.Text;
-                nuevo.Email = txtEmail.Text;
+                if (alumno == null)
+                {
+                    alumno = new Alumno();
+                }
+                alumno.Nombre = txtNombres.Text;
+                alumno.Apellido = txtApellido.Text;
+                alumno.FechaNac = dtpFechaNacimiento.Value;
+                if (rBtnMasculino.Checked) alumno.Sexo = "M";
+                else if (rBtnFemenino.Checked) alumno.Sexo = "F";
+                alumno.Dni = txtDNI.Text;
+                alumno.Email = txtEmail.Text;
                 //nuevo.Direccion=
                 //nuevo.Telefono = txtTelefono.Text;
 
-                alum.alta(nuevo);
-                MessageBox.Show("ALUMNO GUARDADO CON ÉXITO"); 
+                if (alumno.Legajo != 0)
+                {
+                    alum.modificar(alumno);
+                }
+                else
+                {
+                    alum.alta(alumno);
+
+                    }
+
+                MSB_Guardado_con_exito msb = new MSB_Guardado_con_exito();
+                msb.ShowDialog();
                 this.Close(); //Regresa al control de usuario alumno
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void frmAltaAlumnos_Load(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (alumno != null)
+                {
+                    txtNombres.Text= alumno.Nombre;
+                    txtApellido.Text = alumno.Apellido;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }

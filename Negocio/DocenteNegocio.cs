@@ -21,7 +21,7 @@ namespace Negocio
 
             try
             {
-                conexion.ConnectionString = "initial catalog= GESTION; data source =.; integrated security=sspi";
+                conexion.ConnectionString = "initial catalog= GESTION; data source = .; integrated security=sspi";
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = "select legajo,nombre,apellido,fnac,email,direccion,telefono,dni from docentes";
                 comando.Connection = conexion;
@@ -31,7 +31,7 @@ namespace Negocio
                 while (lector.Read())
                 {
                     Docente aux = new Docente();
-                    aux.Legajo = lector.GetInt32(0); // SI LO HABILITO ME TIRA ERROR, PREGUNTAR POR QUÉ
+                    aux.Legajo = lector.GetInt32(0);
                     aux.Nombre = lector.GetString(1);
                     aux.Apellido = lector.GetString(2);
                     aux.FechaNac = lector.GetDateTime(3);
